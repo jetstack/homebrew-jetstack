@@ -1,7 +1,6 @@
 class Paranoia < Formula
   desc "Inspect certificate authorites in contianer images"
   homepage "https://github.com/jetstack/paranoia"
-  version "0.2.0"
   url "https://github.com/jetstack/paranoia/archive/refs/tags/v0.2.0.tar.gz"
   sha256 "c627437fc2ca74fb2e162501b8d44fff7de60f16788de7d19355cd621b8e6203"
   license "Apache-2.0"
@@ -15,7 +14,7 @@ class Paranoia < Formula
 
   test do
     # This string is the SHA256 of the "ISRG X1 Root" certificate
-    assert_match "96bcec06264976f37460779acf28c5a7cfe8a3c0aae11a8ffcee05c0bddf08c6", shell_output("paranoia export --output wide quay.io/jetstack/cert-manager-controller:v1.9.1")
+    assert_match "96bcec06264976f37460779acf28c5a7cfe8a3c0aae11a8ffcee05c0bddf08c6",
+      shell_output("paranoia export --output wide quay.io/jetstack/cert-manager-controller:v1.9.1")
   end
 end
-
