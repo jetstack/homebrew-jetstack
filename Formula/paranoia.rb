@@ -14,6 +14,8 @@ class Paranoia < Formula
   end
 
   test do
-    system "false"
+    # This string is the SHA256 of the "ISRG X1 Root" certificate
+    assert_match "96bcec06264976f37460779acf28c5a7cfe8a3c0aae11a8ffcee05c0bddf08c6", shell_output("paranoia export --output wide quay.io/jetstack/cert-manager-controller:v1.9.1")
   end
 end
+
