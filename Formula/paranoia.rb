@@ -6,6 +6,12 @@ class Paranoia < Formula
   license "Apache-2.0"
   head "https://github.com/jetstack/paranoia.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/jetstack/homebrew-jetstack/releases/download/paranoia-0.2.1"
+    sha256 cellar: :any_skip_relocation, monterey:     "72247ad301045a7ae873c9ac1b06e967ae9ef7bae03d52345997ca228821ad7c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "eae0d69009f562a3f42ed2b777442df34a1de642f21325514114a173e678d6ee"
+  end
+
   depends_on "go" => :build
 
   def install
