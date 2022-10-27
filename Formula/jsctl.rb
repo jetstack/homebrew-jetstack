@@ -5,6 +5,12 @@ class Jsctl < Formula
   license "Apache-2.0"
   head "https://github.com/jetstack/jsctl.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/jetstack/homebrew-jetstack/releases/download/jsctl-0.1.11"
+    sha256 cellar: :any_skip_relocation, monterey:     "1a740c2496b7352fbf50be3a922ab00bb9f06fb8d6371997c9e9bc22b4b20323"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "15cb802a3f4ea5f71247c273929b0847a9b4691da8ecc1da7a07797da0b4d681"
+  end
+
   on_macos do
     on_arm do
       url "https://github.com/jetstack/jsctl/releases/download/v#{version}/jsctl-#{version}-darwin-arm64.tar.gz"
