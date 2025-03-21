@@ -27,6 +27,6 @@ class Paranoia < Formula
     # This string is the SHA256 of the "ISRG X1 Root" certificate. This test verifies that
     # paranoia can find that certificate in a known image (cert-manager v1.9.1).
     assert_match "96bcec06264976f37460779acf28c5a7cfe8a3c0aae11a8ffcee05c0bddf08c6",
-      shell_output("bin/paranoia export --output wide quay.io/jetstack/cert-manager-controller:v1.9.1")
+      shell_output(bin/"paranoia export --output wide quay.io/jetstack/cert-manager-controller:v1.9.1")
   end
 end
