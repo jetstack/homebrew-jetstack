@@ -2,7 +2,7 @@ class Paranoia < Formula
   desc "Inspect certificate authorites in contianer images"
   homepage "https://github.com/jetstack/paranoia"
   url "https://github.com/jetstack/paranoia/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "19783029ddccfa5666e202156a7f2aa5014c952e42ecf5707838919fbbdb1c82"
+  sha256 "2dbfd2e91b750897a96389db30f7e19e5474edf2d540b6d2655f90c3d65cf826"
   license "Apache-2.0"
   head "https://github.com/jetstack/paranoia.git", branch: "main"
 
