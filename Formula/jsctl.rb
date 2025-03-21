@@ -36,6 +36,6 @@ class Jsctl < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("jsctl version")
+    assert_match version.to_s, shell_output(bin/"jsctl version")
   end
 end
