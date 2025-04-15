@@ -32,10 +32,10 @@ class Jsctl < Formula
     # The tar we downloaded has the binary already in it just called jsctl
     bin.install "jsctl"
     # Use the binary to generate shell completions
-    generate_completions_from_executable(bin/"jsctl", "completion")
+    generate_completions_from_executable("#{bin}/jsctl", "completion")
   end
 
   test do
-    assert_match version.to_s, shell_output("jsctl version")
+    assert_match version.to_s, shell_output("#{bin}/jsctl version")
   end
 end
