@@ -1,15 +1,15 @@
 class Paranoia < Formula
   desc "Inspect certificate authorites in contianer images"
   homepage "https://github.com/jetstack/paranoia"
-  url "https://github.com/jetstack/paranoia/archive/refs/tags/v0.4.0.tar.gz"
+  url "https://github.com/jetstack/paranoia/archive/refs/tags/v0.5.0.tar.gz"
   sha256 "7a03ec351830b52895ecdd584f351c4f7b960e63bd047874aa1f68792a07203b"
   license "Apache-2.0"
   head "https://github.com/jetstack/paranoia.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/jetstack/homebrew-jetstack/releases/download/paranoia-0.4.0"
-    sha256 cellar: :any_skip_relocation, monterey:     "72247ad301045a7ae873c9ac1b06e967ae9ef7bae03d52345997ca228821ad7c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "eae0d69009f562a3f42ed2b777442df34a1de642f21325514114a173e678d6ee"
+    root_url "https://github.com/jetstack/homebrew-jetstack/releases/download/paranoia-0.5.0"
+    sha256 cellar: :any_skip_relocation, monterey:     "1cc33c6743000b8adfc2fddb8dc2d6dbb21bcc6588a445a05b6c6656a0715856"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4adeabcb93c1f13da12ffee63f373604e213a9bbd9fdfb9e4fd40ef436dda792"
   end
 
   depends_on "go" => :build
