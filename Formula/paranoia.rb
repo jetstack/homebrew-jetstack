@@ -8,8 +8,7 @@ class Paranoia < Formula
 
   bottle do
     root_url "https://github.com/jetstack/homebrew-jetstack/releases/download/paranoia-0.5.0"
-    sha256 cellar: :any_skip_relocation, monterey:     "1cc33c6743000b8adfc2fddb8dc2d6dbb21bcc6588a445a05b6c6656a0715856"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "4adeabcb93c1f13da12ffee63f373604e213a9bbd9fdfb9e4fd40ef436dda792"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "9ba054a63b50606fca024df5f5f4fb67909022649befd89f3d9d17fd70bc7e15"
   end
 
   depends_on "go" => :build
